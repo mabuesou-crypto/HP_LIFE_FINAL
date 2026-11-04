@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conteúdos | HPlife</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input class="theme-toggle-checkbox" type="checkbox" id="theme-toggle-checkbox" />
+    <label class="theme-toggle theme-toggle-floating" for="theme-toggle-checkbox" title="Alternar tema claro ou escuro">
+      <svg class="theme-toggle-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4a8.5 8.5 0 1 0 11.4 11.4Z"/></svg>
+      <svg class="theme-toggle-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      <span class="visually-hidden">Alternar tema claro ou escuro</span>
+    </label>
+    <a class="visually-hidden-focusable position-absolute top-0 start-0 z-3 p-3 bg-white" href="#main-content">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegação principal">
+      <div class="container-fluid">
+        <a class="navbar-brand d-inline-flex align-items-center gap-2" href="home.html">
+          <img src="../img/logo.png" width="28" height="36" alt="" />
+          HPlife
+        </a>
+        <div class="navbar-collapse">
+          <div class="navbar-nav flex-row flex-wrap gap-1">
+            <a class="nav-link" href="home.html">Início</a>
+            <a class="nav-link" href="habitos.html">Hábitos</a>
+            <a class="nav-link" href="planner.html">Planner</a>
+            <a class="nav-link active" aria-current="page" href="conteudos.html">Conteúdos</a>
+            <a class="nav-link" href="progresso.html">Progresso</a>
+            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link" href="contato.html">Contato</a>
+            <a class="nav-link" href="equipe.html">Equipe</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5" id="main-content">
+      <div class="mb-4">
+        <h1 class="h2 fw-semibold">Conteúdos para o dia a dia</h1>
+        <p class="text-secondary">Ideias gerais para apoiar uma rotina mais saudável, no seu ritmo.</p>
+      </div>
+
+      <div class="row g-4">
+        <section class="col-12 col-md-6 topic-card" id="sono">
+          <article class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-success mb-2">Descanso</span>
+              <h2 class="h5 card-title">Sono</h2>
+              <p class="card-text">Tente manter horários regulares para dormir e acordar. Um ambiente tranquilo e uma rotina relaxante antes de deitar também podem ajudar.</p>
+              <h3 class="h6 mt-3">Ideias para testar</h3>
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item px-0">Escolha um horário tranquilo para começar a desacelerar.</li>
+                <li class="list-group-item px-0">Prepare o quarto para favorecer o descanso.</li>
+              </ul>
+              <a class="btn btn-outline-success btn-sm" href="habitos.html#sono">Ver dicas de sono</a>
+            </div>
+          </article>
+        </section>
+        <section class="col-12 col-md-6 topic-card" id="alimentacao">
+          <article class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-warning mb-2">Equilíbrio</span>
+              <h2 class="h5 card-title">Alimentação</h2>
+              <p class="card-text">Variedade e equilíbrio são bons pontos de partida. Necessidades alimentares mudam de pessoa para pessoa; procure orientação profissional para um plano individual.</p>
+              <h3 class="h6 mt-3">Ideias para testar</h3>
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item px-0">Inclua variedade nas refeições, conforme sua realidade.</li>
+                <li class="list-group-item px-0">Deixe água acessível ao longo do dia.</li>
+              </ul>
+              <a class="btn btn-outline-success btn-sm" href="habitos.html#alimentacao">Ver dicas de alimentação</a>
+            </div>
+          </article>
+        </section>
+        <section class="col-12 col-md-6 topic-card" id="movimento">
+          <article class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-primary mb-2">Atividade</span>
+              <h2 class="h5 card-title">Movimento</h2>
+              <p class="card-text">Caminhadas, alongamentos e pausas para se movimentar podem caber na rotina. Comece de forma confortável e respeite seus limites.</p>
+              <h3 class="h6 mt-3">Ideias para testar</h3>
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item px-0">Escolha uma atividade que seja agradável para você.</li>
+                <li class="list-group-item px-0">Comece aos poucos e ajuste conforme se sentir bem.</li>
+              </ul>
+              <a class="btn btn-outline-success btn-sm" href="habitos.html#movimento">Ver dicas de movimento</a>
+            </div>
+          </article>
+        </section>
+        <section class="col-12 col-md-6 topic-card" id="saude-mental">
+          <article class="card h-100">
+            <div class="card-body">
+              <span class="badge text-bg-info mb-2">Autocuidado</span>
+              <h2 class="h5 card-title">Saúde mental</h2>
+              <p class="card-text">Pausas, lazer e conversas com pessoas de confiança podem fazer parte do autocuidado. Se precisar, procure apoio de um profissional de saúde.</p>
+              <h3 class="h6 mt-3">Ideias para testar</h3>
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item px-0">Reserve alguns minutos para uma atividade prazerosa.</li>
+                <li class="list-group-item px-0">Converse com alguém de confiança quando precisar.</li>
+              </ul>
+              <a class="btn btn-outline-success btn-sm" href="habitos.html#saude-mental">Ver dicas de autocuidado</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer bg-dark text-white">
+      <div class="container-fluid py-4 px-3 px-lg-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-5">
+            <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none mb-2" href="home.html">
+              <img src="../img/logo.png" width="32" height="41" alt="" />
+              <span class="h5 mb-0">HPlife</span>
+            </a>
+            <p class="small text-white-50 mb-0">Pequenos hábitos, uma vida mais leve. Cuide do seu bem-estar no seu ritmo.</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2 class="h6 text-uppercase">Explore</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="home.html">Início</a></li>
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="planner.html">Planner</a></li>
+              <li><a class="link-light link-opacity-75-hover" href="progresso.html">Progresso</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h2 class="h6 text-uppercase">Saiba mais</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="conteudos.html">Conteúdos</a></li>
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="sobre.html">Sobre o HPlife</a></li>
+              <li><a class="link-light link-opacity-75-hover" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="d-flex flex-column flex-sm-row justify-content-between gap-2 small text-white-50">
+          <span>© HPlife — projeto demonstrativo.</span>
+          <span>Conteúdos gerais de bem-estar; não substituem orientação profissional.</span>
+        </div>
+      </div>
+    </footer>
+    <aside class="help-widget" aria-label="Ajuda rápida">
+      <details>
+        <summary class="help-widget-toggle">Precisa de ajuda?</summary>
+        <div class="help-widget-panel card shadow">
+          <div class="card-body">
+            <h2 class="h5">Ajuda rápida</h2>
+            <p class="small text-secondary">Respostas prontas para as dúvidas mais comuns.</p>
+            <details class="help-widget-question">
+              <summary>Como encontro um tema?</summary>
+              <p>Role a página ou use os cartões da página <a href="home.html">Início</a> para ir a um tema.</p>
+            </details>
+            <details class="help-widget-question">
+              <summary>Onde monto minha rotina?</summary>
+              <p>Abra o <a href="planner.html">Planner semanal</a> para escolher hábitos, horários e dias.</p>
+            </details>
+            <details class="help-widget-question">
+              <summary>As informações são orientação médica?</summary>
+              <p>Não. São informações gerais e não substituem orientação de um profissional de saúde.</p>
+            </details>
+            <p class="small text-secondary mt-3 mb-0">Esta ajuda não usa IA e não lê perguntas livres.</p>
+          </div>
+        </div>
+      </details>
+    </aside>
+  </body>
+</html>

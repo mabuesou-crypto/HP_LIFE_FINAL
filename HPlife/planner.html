@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner | HPlife</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input class="theme-toggle-checkbox" type="checkbox" id="theme-toggle-checkbox" />
+    <label class="theme-toggle theme-toggle-floating" for="theme-toggle-checkbox" title="Alternar tema claro ou escuro">
+      <svg class="theme-toggle-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4a8.5 8.5 0 1 0 11.4 11.4Z"/></svg>
+      <svg class="theme-toggle-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      <span class="visually-hidden">Alternar tema claro ou escuro</span>
+    </label>
+    <a class="visually-hidden-focusable position-absolute top-0 start-0 z-3 p-3 bg-white" href="#main-content">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegação principal">
+      <div class="container-fluid">
+        <a class="navbar-brand d-inline-flex align-items-center gap-2" href="home.html">
+          <img src="../img/logo.png" width="28" height="36" alt="" />
+          HPlife
+        </a>
+        <div class="navbar-collapse">
+          <div class="navbar-nav flex-row flex-wrap gap-1">
+            <a class="nav-link" href="home.html">Início</a>
+            <a class="nav-link" href="habitos.html">Hábitos</a>
+            <a class="nav-link active" aria-current="page" href="planner.html">Planner</a>
+            <a class="nav-link" href="conteudos.html">Conteúdos</a>
+            <a class="nav-link" href="progresso.html">Progresso</a>
+            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link" href="contato.html">Contato</a>
+            <a class="nav-link" href="equipe.html">Equipe</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5" id="main-content">
+      <header class="mb-4">
+        <p class="text-success fw-semibold text-uppercase small mb-2">Sua rotina, no seu ritmo</p>
+        <h1 class="h2 fw-semibold mb-2">Meu planner semanal</h1>
+        <p class="text-secondary mb-0">
+          Escolha os dias e horários dos hábitos que quer incluir na sua semana.
+        </p>
+      </header>
+
+      <div class="alert alert-info d-print-none" role="note">
+        Esta página é demonstrativa. Sem JavaScript ou servidor, as alterações ficam apenas enquanto ela está aberta; ao recarregar, os campos voltam aos exemplos iniciais. Para guardar uma cópia em papel ou PDF, use Ctrl+P (ou Cmd+P no Mac).
+      </div>
+
+      <section aria-labelledby="habitosTitle">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-2 mb-3">
+          <div>
+            <h2 class="h4 mb-1" id="habitosTitle">Hábitos da semana</h2>
+            <p class="text-secondary mb-0">Marque os dias planejados e ajuste o horário como preferir.</p>
+          </div>
+          <span class="badge text-bg-success">2 sugestões + 4 espaços livres</span>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-lg-6">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">
+                  <label class="visually-hidden" for="nome-habito-1">Nome do hábito 1</label>
+                  <input class="form-control planner-habit-name" id="nome-habito-1" type="text" value="Beber água" maxlength="50" />
+                </h3>
+                <div class="row g-3 align-items-start">
+                  <div class="col-sm-4">
+                    <label class="form-label small" for="hora1">Horário</label>
+                    <input class="form-control form-control-sm" id="hora1" type="time" value="09:00" />
+                  </div>
+                  <fieldset class="col-sm-8">
+                    <legend class="form-label small mb-2">Dias planejados</legend>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input class="btn-check" type="checkbox" id="habito1-seg" aria-label="Segunda-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito1-seg">Seg</label>
+                      <input class="btn-check" type="checkbox" id="habito1-ter" aria-label="Terça-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito1-ter">Ter</label>
+                      <input class="btn-check" type="checkbox" id="habito1-qua" aria-label="Quarta-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito1-qua">Qua</label>
+                      <input class="btn-check" type="checkbox" id="habito1-qui" aria-label="Quinta-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito1-qui">Qui</label>
+                      <input class="btn-check" type="checkbox" id="habito1-sex" aria-label="Sexta-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito1-sex">Sex</label>
+                      <input class="btn-check" type="checkbox" id="habito1-sab" aria-label="Sábado" /><label class="btn btn-outline-success btn-sm" for="habito1-sab">Sáb</label>
+                      <input class="btn-check" type="checkbox" id="habito1-dom" aria-label="Domingo" /><label class="btn btn-outline-success btn-sm" for="habito1-dom">Dom</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">
+                  <label class="visually-hidden" for="nome-habito-2">Nome do hábito 2</label>
+                  <input class="form-control planner-habit-name" id="nome-habito-2" type="text" value="Fazer uma caminhada" maxlength="50" />
+                </h3>
+                <div class="row g-3 align-items-start">
+                  <div class="col-sm-4">
+                    <label class="form-label small" for="hora2">Horário</label>
+                    <input class="form-control form-control-sm" id="hora2" type="time" value="17:00" />
+                  </div>
+                  <fieldset class="col-sm-8">
+                    <legend class="form-label small mb-2">Dias planejados</legend>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input class="btn-check" type="checkbox" id="habito2-seg" aria-label="Segunda-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito2-seg">Seg</label>
+                      <input class="btn-check" type="checkbox" id="habito2-ter" aria-label="Terça-feira" /><label class="btn btn-outline-success btn-sm" for="habito2-ter">Ter</label>
+                      <input class="btn-check" type="checkbox" id="habito2-qua" aria-label="Quarta-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito2-qua">Qua</label>
+                      <input class="btn-check" type="checkbox" id="habito2-qui" aria-label="Quinta-feira" /><label class="btn btn-outline-success btn-sm" for="habito2-qui">Qui</label>
+                      <input class="btn-check" type="checkbox" id="habito2-sex" aria-label="Sexta-feira" checked /><label class="btn btn-outline-success btn-sm" for="habito2-sex">Sex</label>
+                      <input class="btn-check" type="checkbox" id="habito2-sab" aria-label="Sábado" /><label class="btn btn-outline-success btn-sm" for="habito2-sab">Sáb</label>
+                      <input class="btn-check" type="checkbox" id="habito2-dom" aria-label="Domingo" /><label class="btn btn-outline-success btn-sm" for="habito2-dom">Dom</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <h2 class="h5 mt-3 mb-0">Adicione hábitos nos espaços livres</h2>
+            <p class="text-secondary small mb-0">Digite um nome para cada hábito livre, escolha um horário e marque os dias planejados.</p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">
+                  <label class="visually-hidden" for="nome-habito-3">Nome do novo hábito 1</label>
+                  <input class="form-control planner-habit-name planner-habit-name-empty" id="nome-habito-3" type="text" placeholder="Digite um hábito" maxlength="50" />
+                </h3>
+                <div class="row g-3 align-items-start">
+                  <div class="col-sm-4">
+                    <label class="form-label small" for="hora3">Horário</label>
+                    <input class="form-control form-control-sm" id="hora3" type="time" />
+                  </div>
+                  <fieldset class="col-sm-8">
+                    <legend class="form-label small mb-2">Dias planejados</legend>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input class="btn-check" type="checkbox" id="habito3-seg" aria-label="Segunda-feira" /><label class="btn btn-outline-success btn-sm" for="habito3-seg">Seg</label>
+                      <input class="btn-check" type="checkbox" id="habito3-ter" aria-label="Terça-feira" /><label class="btn btn-outline-success btn-sm" for="habito3-ter">Ter</label>
+                      <input class="btn-check" type="checkbox" id="habito3-qua" aria-label="Quarta-feira" /><label class="btn btn-outline-success btn-sm" for="habito3-qua">Qua</label>
+                      <input class="btn-check" type="checkbox" id="habito3-qui" aria-label="Quinta-feira" /><label class="btn btn-outline-success btn-sm" for="habito3-qui">Qui</label>
+                      <input class="btn-check" type="checkbox" id="habito3-sex" aria-label="Sexta-feira" /><label class="btn btn-outline-success btn-sm" for="habito3-sex">Sex</label>
+                      <input class="btn-check" type="checkbox" id="habito3-sab" aria-label="Sábado" /><label class="btn btn-outline-success btn-sm" for="habito3-sab">Sáb</label>
+                      <input class="btn-check" type="checkbox" id="habito3-dom" aria-label="Domingo" /><label class="btn btn-outline-success btn-sm" for="habito3-dom">Dom</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">
+                  <label class="visually-hidden" for="nome-habito-4">Nome do novo hábito 2</label>
+                  <input class="form-control planner-habit-name planner-habit-name-empty" id="nome-habito-4" type="text" placeholder="Digite um hábito" maxlength="50" />
+                </h3>
+                <div class="row g-3 align-items-start">
+                  <div class="col-sm-4">
+                    <label class="form-label small" for="hora4">Horário</label>
+                    <input class="form-control form-control-sm" id="hora4" type="time" />
+                  </div>
+                  <fieldset class="col-sm-8">
+                    <legend class="form-label small mb-2">Dias planejados</legend>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input class="btn-check" type="checkbox" id="habito4-seg" aria-label="Segunda-feira" /><label class="btn btn-outline-success btn-sm" for="habito4-seg">Seg</label>
+                      <input class="btn-check" type="checkbox" id="habito4-ter" aria-label="Terça-feira" /><label class="btn btn-outline-success btn-sm" for="habito4-ter">Ter</label>
+                      <input class="btn-check" type="checkbox" id="habito4-qua" aria-label="Quarta-feira" /><label class="btn btn-outline-success btn-sm" for="habito4-qua">Qua</label>
+                      <input class="btn-check" type="checkbox" id="habito4-qui" aria-label="Quinta-feira" /><label class="btn btn-outline-success btn-sm" for="habito4-qui">Qui</label>
+                      <input class="btn-check" type="checkbox" id="habito4-sex" aria-label="Sexta-feira" /><label class="btn btn-outline-success btn-sm" for="habito4-sex">Sex</label>
+                      <input class="btn-check" type="checkbox" id="habito4-sab" aria-label="Sábado" /><label class="btn btn-outline-success btn-sm" for="habito4-sab">Sáb</label>
+                      <input class="btn-check" type="checkbox" id="habito4-dom" aria-label="Domingo" /><label class="btn btn-outline-success btn-sm" for="habito4-dom">Dom</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">
+                  <label class="visually-hidden" for="nome-habito-5">Nome do novo hábito 3</label>
+                  <input class="form-control planner-habit-name planner-habit-name-empty" id="nome-habito-5" type="text" placeholder="Digite um hábito" maxlength="50" />
+                </h3>
+                <div class="row g-3 align-items-start">
+                  <div class="col-sm-4">
+                    <label class="form-label small" for="hora5">Horário</label>
+                    <input class="form-control form-control-sm" id="hora5" type="time" />
+                  </div>
+                  <fieldset class="col-sm-8">
+                    <legend class="form-label small mb-2">Dias planejados</legend>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input class="btn-check" type="checkbox" id="habito5-seg" aria-label="Segunda-feira" /><label class="btn btn-outline-success btn-sm" for="habito5-seg">Seg</label>
+                      <input class="btn-check" type="checkbox" id="habito5-ter" aria-label="Terça-feira" /><label class="btn btn-outline-success btn-sm" for="habito5-ter">Ter</label>
+                      <input class="btn-check" type="checkbox" id="habito5-qua" aria-label="Quarta-feira" /><label class="btn btn-outline-success btn-sm" for="habito5-qua">Qua</label>
+                      <input class="btn-check" type="checkbox" id="habito5-qui" aria-label="Quinta-feira" /><label class="btn btn-outline-success btn-sm" for="habito5-qui">Qui</label>
+                      <input class="btn-check" type="checkbox" id="habito5-sex" aria-label="Sexta-feira" /><label class="btn btn-outline-success btn-sm" for="habito5-sex">Sex</label>
+                      <input class="btn-check" type="checkbox" id="habito5-sab" aria-label="Sábado" /><label class="btn btn-outline-success btn-sm" for="habito5-sab">Sáb</label>
+                      <input class="btn-check" type="checkbox" id="habito5-dom" aria-label="Domingo" /><label class="btn btn-outline-success btn-sm" for="habito5-dom">Dom</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 mb-3">
+                  <label class="visually-hidden" for="nome-habito-6">Nome do novo hábito 4</label>
+                  <input class="form-control planner-habit-name planner-habit-name-empty" id="nome-habito-6" type="text" placeholder="Digite um hábito" maxlength="50" />
+                </h3>
+                <div class="row g-3 align-items-start">
+                  <div class="col-sm-4">
+                    <label class="form-label small" for="hora6">Horário</label>
+                    <input class="form-control form-control-sm" id="hora6" type="time" />
+                  </div>
+                  <fieldset class="col-sm-8">
+                    <legend class="form-label small mb-2">Dias planejados</legend>
+                    <div class="d-flex flex-wrap gap-2">
+                      <input class="btn-check" type="checkbox" id="habito6-seg" aria-label="Segunda-feira" /><label class="btn btn-outline-success btn-sm" for="habito6-seg">Seg</label>
+                      <input class="btn-check" type="checkbox" id="habito6-ter" aria-label="Terça-feira" /><label class="btn btn-outline-success btn-sm" for="habito6-ter">Ter</label>
+                      <input class="btn-check" type="checkbox" id="habito6-qua" aria-label="Quarta-feira" /><label class="btn btn-outline-success btn-sm" for="habito6-qua">Qua</label>
+                      <input class="btn-check" type="checkbox" id="habito6-qui" aria-label="Quinta-feira" /><label class="btn btn-outline-success btn-sm" for="habito6-qui">Qui</label>
+                      <input class="btn-check" type="checkbox" id="habito6-sex" aria-label="Sexta-feira" /><label class="btn btn-outline-success btn-sm" for="habito6-sex">Sex</label>
+                      <input class="btn-check" type="checkbox" id="habito6-sab" aria-label="Sábado" /><label class="btn btn-outline-success btn-sm" for="habito6-sab">Sáb</label>
+                      <input class="btn-check" type="checkbox" id="habito6-dom" aria-label="Domingo" /><label class="btn btn-outline-success btn-sm" for="habito6-dom">Dom</label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+        <a href="progresso.html" class="btn btn-primary">Etapa 3 — Ver exemplo de acompanhamento</a>
+        <a href="habitos.html" class="btn btn-outline-success">Ver dicas de hábitos</a>
+      </div>
+    </main>
+
+    <footer class="site-footer bg-dark text-white">
+      <div class="container-fluid py-4 px-3 px-lg-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-5">
+            <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none mb-2" href="home.html">
+              <img src="../img/logo.png" width="32" height="41" alt="" />
+              <span class="h5 mb-0">HPlife</span>
+            </a>
+            <p class="small text-white-50 mb-0">Pequenos hábitos, uma vida mais leve. Cuide do seu bem-estar no seu ritmo.</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2 class="h6 text-uppercase">Explore</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="home.html">Início</a></li>
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="planner.html">Planner</a></li>
+              <li><a class="link-light link-opacity-75-hover" href="progresso.html">Progresso</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h2 class="h6 text-uppercase">Saiba mais</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="conteudos.html">Conteúdos</a></li>
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="sobre.html">Sobre o HPlife</a></li>
+              <li><a class="link-light link-opacity-75-hover" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="d-flex flex-column flex-sm-row justify-content-between gap-2 small text-white-50">
+          <span>© HPlife — projeto demonstrativo.</span>
+          <span>Conteúdos gerais de bem-estar; não substituem orientação profissional.</span>
+        </div>
+      </div>
+    </footer>
+    <aside class="help-widget" aria-label="Ajuda rápida">
+      <details>
+        <summary class="help-widget-toggle">Precisa de ajuda?</summary>
+        <div class="help-widget-panel card shadow">
+          <div class="card-body">
+            <h2 class="h5">Ajuda rápida</h2>
+            <p class="small text-secondary">Respostas prontas para as dúvidas mais comuns.</p>
+            <details class="help-widget-question">
+              <summary>Como adiciono um hábito?</summary>
+              <p>Digite o nome em um dos campos de hábito livre. Depois escolha o horário e os dias.</p>
+            </details>
+            <details class="help-widget-question">
+              <summary>As alterações ficam salvas?</summary>
+              <p>Não. Sem JavaScript ou servidor, os campos voltam aos exemplos quando você recarrega a página.</p>
+            </details>
+            <details class="help-widget-question">
+              <summary>O progresso muda com o Planner?</summary>
+              <p>Não. Os dados da página <a href="progresso.html">Progresso</a> são demonstrativos e independentes.</p>
+            </details>
+            <p class="small text-secondary mt-3 mb-0">Esta ajuda não usa IA e não lê perguntas livres.</p>
+          </div>
+        </div>
+      </details>
+    </aside>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | HPlife</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input class="theme-toggle-checkbox" type="checkbox" id="theme-toggle-checkbox" />
+    <label class="theme-toggle theme-toggle-floating" for="theme-toggle-checkbox" title="Alternar tema claro ou escuro">
+      <svg class="theme-toggle-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4a8.5 8.5 0 1 0 11.4 11.4Z"/></svg>
+      <svg class="theme-toggle-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+      <span class="visually-hidden">Alternar tema claro ou escuro</span>
+    </label>
+    <a class="visually-hidden-focusable position-absolute top-0 start-0 z-3 p-3 bg-white" href="#main-content">Pular para o conteúdo</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegação principal">
+      <div class="container-fluid">
+        <a class="navbar-brand d-inline-flex align-items-center gap-2" href="home.html">
+          <img src="../img/logo.png" width="28" height="36" alt="" />
+          HPlife
+        </a>
+        <div class="navbar-collapse">
+          <div class="navbar-nav flex-row flex-wrap gap-1">
+            <a class="nav-link" href="home.html">Início</a>
+            <a class="nav-link" href="habitos.html">Hábitos</a>
+            <a class="nav-link" href="planner.html">Planner</a>
+            <a class="nav-link" href="conteudos.html">Conteúdos</a>
+            <a class="nav-link" href="progresso.html">Progresso</a>
+            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+            <a class="nav-link" href="equipe.html">Equipe</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5" id="main-content">
+      <header class="mb-4">
+        <p class="text-success fw-semibold text-uppercase small mb-2">Estamos por aqui</p>
+        <h1 class="h2 fw-semibold mb-2">Contato</h1>
+        <p class="text-secondary mb-0">Esta demonstração não envia mensagens, mas você pode conhecer os campos do formulário.</p>
+      </header>
+      <div class="alert alert-info" id="contact-note" role="note">O formulário é ilustrativo e não envia nem armazena as informações digitadas.</div>
+      <form aria-describedby="contact-note">
+        <div class="mb-3">
+          <label for="nomeInput" class="form-label">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nomeInput"
+            placeholder="Seu nome"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">E-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder="seuemail@exemplo.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mensagemTextarea" class="form-label">Mensagem</label>
+          <textarea
+            class="form-control"
+            id="mensagemTextarea"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" disabled>Envio indisponível nesta demonstração</button>
+      </form>
+    </main>
+
+    <footer class="site-footer bg-dark text-white">
+      <div class="container-fluid py-4 px-3 px-lg-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-5">
+            <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none mb-2" href="home.html">
+              <img src="../img/logo.png" width="32" height="41" alt="" />
+              <span class="h5 mb-0">HPlife</span>
+            </a>
+            <p class="small text-white-50 mb-0">Pequenos hábitos, uma vida mais leve. Cuide do seu bem-estar no seu ritmo.</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2 class="h6 text-uppercase">Explore</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="home.html">Início</a></li>
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="planner.html">Planner</a></li>
+              <li><a class="link-light link-opacity-75-hover" href="progresso.html">Progresso</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h2 class="h6 text-uppercase">Saiba mais</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="conteudos.html">Conteúdos</a></li>
+              <li class="mb-2"><a class="link-light link-opacity-75-hover" href="sobre.html">Sobre o HPlife</a></li>
+              <li><a class="link-light link-opacity-75-hover" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="d-flex flex-column flex-sm-row justify-content-between gap-2 small text-white-50">
+          <span>© HPlife — projeto demonstrativo.</span>
+          <span>Conteúdos gerais de bem-estar; não substituem orientação profissional.</span>
+        </div>
+      </div>
+    </footer>
+    <aside class="help-widget" aria-label="Ajuda rápida">
+      <details>
+        <summary class="help-widget-toggle">Precisa de ajuda?</summary>
+        <div class="help-widget-panel card shadow">
+          <div class="card-body">
+            <h2 class="h5">Ajuda rápida</h2>
+            <p class="small text-secondary">Respostas prontas para as dúvidas mais comuns.</p>
+            <details class="help-widget-question">
+              <summary>O formulário envia uma mensagem?</summary>
+              <p>Esta demonstração não possui serviço de envio. Não inclua dados pessoais no formulário.</p>
+            </details>
+            <details class="help-widget-question">
+              <summary>Onde vejo os conteúdos?</summary>
+              <p>Visite a página de <a href="conteudos.html">Conteúdos</a> para encontrar dicas gerais.</p>
+            </details>
+            <details class="help-widget-question">
+              <summary>Como falo com a equipe?</summary>
+              <p>Os campos de contato são apenas ilustrativos e não enviam informações.</p>
+            </details>
+            <p class="small text-secondary mt-3 mb-0">Esta ajuda não usa IA e não lê perguntas livres.</p>
+          </div>
+        </div>
+      </details>
+    </aside>
+  </body>
+</html>
